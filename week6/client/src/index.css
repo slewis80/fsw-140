@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(143, 156, 115);
+  font-family: 'Lexend Peta', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.avengerContainer {
+  text-align: center;
+  margin: 15px auto;
+  border: 2px solid firebrick;
+  padding: 15px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.avengerContainer:hover {
+  box-shadow: 3px 3px 15px black;
+  background-color: rgb(152, 161, 132);
+  cursor: pointer;
+}

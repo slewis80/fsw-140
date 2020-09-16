@@ -11,7 +11,8 @@ export default function Sortbar() {
         sortByAppearances,
         sortByYear,
         sortByName,
-        errMsg
+        errMsg,
+        resetErrMsg
     } = useContext(FilterContext)
 
     const startingInput = {
@@ -36,7 +37,7 @@ export default function Sortbar() {
     function handleFilter(e) {
         e.preventDefault()
         console.log(inputs)
-
+        resetErrMsg()
         // let filter = e.target.value
         // console.log(filter)
         if(inputs.gender !== ""){
@@ -54,6 +55,7 @@ export default function Sortbar() {
 
     function resetPage() {
         setInputs(startingInput)
+        resetErrMsg()
         getAvengers()
     }
        

@@ -15,6 +15,10 @@ export default function FilterProvider(props) {
         setErrMsg(errMsg)
     }
 
+    function resetErrMsg(){
+        setErrMsg("")
+    }
+
 
 // main loading
     function getAvengers() {
@@ -109,7 +113,8 @@ export default function FilterProvider(props) {
                 errMsg,
                 sortByAppearances,
                 sortByYear,
-                sortByName
+                sortByName,
+                resetErrMsg
             }}>
             {props.children}
         </FilterContext.Provider>

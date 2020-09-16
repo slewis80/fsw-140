@@ -9,9 +9,43 @@ h1 {
   text-align: center;
 }
 
-.app {
+.sortbar {
+  text-align: center;
+  padding: 15px;
+}
+
+#searchForm {
   display: flex;
-  /* flex-direction: column; */
+  justify-content: space-evenly;
+}
+
+#searchForm > * {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#searchForm > input {
+  width: 40%;
+}
+
+#sortingButtonsContainer {
+  margin: 10px;
+  font-weight: bold;
+}
+
+#sortingButtonsContainer > span {
+  padding: 10px;
+}
+
+.sortingButtons:hover {
+  box-shadow: 1px 1px 5px black;
+  color: firebrick;
+  background-color: rgb(152, 161, 132);
+  cursor: pointer;
+}
+
+.avengersListContainer {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -25,8 +59,21 @@ h1 {
   border-radius: 10px;
 }
 
+.avengerContainer > a {
+  text-decoration: none;
+  color: black;
+}
+
 .avengerContainer:hover {
   box-shadow: 3px 3px 15px black;
   background-color: rgb(152, 161, 132);
   cursor: pointer;
+}
+
+#errMsg {
+  font-size: 30px;
+  text-align: center;
+  color: firebrick;
+  font-weight: bold;
+  margin: 25px;
 }
